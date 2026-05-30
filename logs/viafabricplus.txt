@@ -1,0 +1,410 @@
+---- Minecraft Network Protocol Error Report ----
+// Maybe this time it will work!
+
+Time: 2026-05-30 16:28:45
+Description: Packet handling error
+
+io.netty.handler.codec.DecoderException: com.viaversion.viaversion.exception.InformativeException: Please report the full error (!) from the console on the Via support Discord or open an issue on the relevant GitHub repository.
+Source 0: net.raphimc.viabedrock.protocol.packet.EntityPackets$$Lambda/0x00000001015d0928
+	at knot//io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:101)
+	at knot//com.viaversion.viafabricplus.protocoltranslator.netty.ViaFabricPlusDecoder.channelRead(ViaFabricPlusDecoder.java:43)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at knot//io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+	at knot//io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+	at knot//io.netty.handler.codec.ByteToMessageCodec.channelRead(ByteToMessageCodec.java:103)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//io.netty.handler.flow.FlowControlHandler.dequeue(FlowControlHandler.java:201)
+	at knot//io.netty.handler.flow.FlowControlHandler.channelRead(FlowControlHandler.java:163)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+	at knot//io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+	at knot//io.netty.handler.codec.ByteToMessageCodec.channelRead(ByteToMessageCodec.java:103)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+	at knot//io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+	at knot//io.netty.handler.codec.ByteToMessageCodec.channelRead(ByteToMessageCodec.java:103)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+	at knot//io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+	at knot//io.netty.handler.codec.ByteToMessageCodec.channelRead(ByteToMessageCodec.java:103)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+	at knot//io.netty.handler.codec.MessageToMessageCodec.channelRead(MessageToMessageCodec.java:120)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:293)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1429)
+	at knot//io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.ProxyInboundRouter.channelRead(ProxyInboundRouter.java:66)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.common.EncapsulatedToMessageHandler.channelRead0(EncapsulatedToMessageHandler.java:15)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.common.EncapsulatedToMessageHandler.channelRead0(EncapsulatedToMessageHandler.java:8)
+	at knot//io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.AdvancedChannelInboundHandler.channelRead(AdvancedChannelInboundHandler.java:48)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.AdvancedChannelInboundHandler.channelRead(AdvancedChannelInboundHandler.java:48)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.AdvancedChannelInboundHandler.channelRead(AdvancedChannelInboundHandler.java:48)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.common.RakSessionCodec.onOrderedReceived(RakSessionCodec.java:380)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.common.RakSessionCodec.checkForOrdered(RakSessionCodec.java:361)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.common.RakSessionCodec.handleDatagram(RakSessionCodec.java:354)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.common.RakSessionCodec.channelRead(RakSessionCodec.java:227)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:102)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at knot//io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+	at knot//io.netty.handler.codec.MessageToMessageCodec.channelRead(MessageToMessageCodec.java:120)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.AdvancedChannelInboundHandler.channelRead(AdvancedChannelInboundHandler.java:48)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.client.RakClientProxyRouteHandler.channelRead(RakClientProxyRouteHandler.java:52)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1429)
+	at knot//io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+	at knot//io.netty.channel.epoll.EpollDatagramChannel.connectedRead(EpollDatagramChannel.java:617)
+	at knot//io.netty.channel.epoll.EpollDatagramChannel.access$400(EpollDatagramChannel.java:57)
+	at knot//io.netty.channel.epoll.EpollDatagramChannel$EpollDatagramChannelUnsafe.epollInReady(EpollDatagramChannel.java:547)
+	at knot//io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.handle(AbstractEpollChannel.java:482)
+	at knot//io.netty.channel.epoll.EpollIoHandler$DefaultEpollIoRegistration.handle(EpollIoHandler.java:317)
+	at knot//io.netty.channel.epoll.EpollIoHandler.processReady(EpollIoHandler.java:515)
+	at knot//io.netty.channel.epoll.EpollIoHandler.run(EpollIoHandler.java:460)
+	at knot//io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225)
+	at knot//io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196)
+	at knot//io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1193)
+	at knot//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.viaversion.viaversion.exception.InformativeException: Please report the full error (!) from the console on the Via support Discord or open an issue on the relevant GitHub repository.
+Source 0: net.raphimc.viabedrock.protocol.packet.EntityPackets$$Lambda/0x00000001015d0928
+Caused by: java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because the return value of "com.viaversion.viaversion.libs.fastutil.longs.Long2ObjectMap.get(long)" is null
+	at knot//net.raphimc.viabedrock.protocol.storage.EntityTracker.getEntityByRid(EntityTracker.java:175)
+	at knot//net.raphimc.viabedrock.protocol.packet.EntityPackets.lambda$register$3(EntityPackets.java:249)
+	at knot//com.viaversion.viaversion.api.protocol.AbstractProtocol.transform(AbstractProtocol.java:455)
+	at knot//net.raphimc.viabedrock.api.protocol.StatelessProtocol.transform(StatelessProtocol.java:43)
+	at knot//net.raphimc.viabedrock.protocol.BedrockProtocol.transform(BedrockProtocol.java:201)
+	at knot//com.viaversion.viaversion.protocol.packet.PacketWrapperImpl.apply(PacketWrapperImpl.java:452)
+	at knot//com.viaversion.viaversion.protocol.ProtocolPipelineImpl.transform(ProtocolPipelineImpl.java:110)
+	at knot//com.viaversion.viaversion.connection.UserConnectionImpl.transform(UserConnectionImpl.java:359)
+	at knot//com.viaversion.viaversion.connection.UserConnectionImpl.transformClientbound(UserConnectionImpl.java:335)
+	at knot//com.viaversion.viaversion.api.connection.UserConnection.transformIncoming(UserConnection.java:285)
+	at knot//com.viaversion.viaversion.platform.ViaDecodeHandler.decode(ViaDecodeHandler.java:54)
+	at knot//com.viaversion.viaversion.platform.ViaDecodeHandler.decode(ViaDecodeHandler.java:31)
+	at knot//io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:91)
+	at knot//com.viaversion.viafabricplus.protocoltranslator.netty.ViaFabricPlusDecoder.channelRead(ViaFabricPlusDecoder.java:43)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at knot//io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+	at knot//io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+	at knot//io.netty.handler.codec.ByteToMessageCodec.channelRead(ByteToMessageCodec.java:103)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//io.netty.handler.flow.FlowControlHandler.dequeue(FlowControlHandler.java:201)
+	at knot//io.netty.handler.flow.FlowControlHandler.channelRead(FlowControlHandler.java:163)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+	at knot//io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+	at knot//io.netty.handler.codec.ByteToMessageCodec.channelRead(ByteToMessageCodec.java:103)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+	at knot//io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+	at knot//io.netty.handler.codec.ByteToMessageCodec.channelRead(ByteToMessageCodec.java:103)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+	at knot//io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+	at knot//io.netty.handler.codec.ByteToMessageCodec.channelRead(ByteToMessageCodec.java:103)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+	at knot//io.netty.handler.codec.MessageToMessageCodec.channelRead(MessageToMessageCodec.java:120)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:293)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1429)
+	at knot//io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.ProxyInboundRouter.channelRead(ProxyInboundRouter.java:66)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.common.EncapsulatedToMessageHandler.channelRead0(EncapsulatedToMessageHandler.java:15)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.common.EncapsulatedToMessageHandler.channelRead0(EncapsulatedToMessageHandler.java:8)
+	at knot//io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.AdvancedChannelInboundHandler.channelRead(AdvancedChannelInboundHandler.java:48)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.AdvancedChannelInboundHandler.channelRead(AdvancedChannelInboundHandler.java:48)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.AdvancedChannelInboundHandler.channelRead(AdvancedChannelInboundHandler.java:48)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.common.RakSessionCodec.onOrderedReceived(RakSessionCodec.java:380)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.common.RakSessionCodec.checkForOrdered(RakSessionCodec.java:361)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.common.RakSessionCodec.handleDatagram(RakSessionCodec.java:354)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.common.RakSessionCodec.channelRead(RakSessionCodec.java:227)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:102)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at knot//io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+	at knot//io.netty.handler.codec.MessageToMessageCodec.channelRead(MessageToMessageCodec.java:120)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.AdvancedChannelInboundHandler.channelRead(AdvancedChannelInboundHandler.java:48)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.client.RakClientProxyRouteHandler.channelRead(RakClientProxyRouteHandler.java:52)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1429)
+	at knot//io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+	at knot//io.netty.channel.epoll.EpollDatagramChannel.connectedRead(EpollDatagramChannel.java:617)
+	at knot//io.netty.channel.epoll.EpollDatagramChannel.access$400(EpollDatagramChannel.java:57)
+	at knot//io.netty.channel.epoll.EpollDatagramChannel$EpollDatagramChannelUnsafe.epollInReady(EpollDatagramChannel.java:547)
+	at knot//io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.handle(AbstractEpollChannel.java:482)
+	at knot//io.netty.channel.epoll.EpollIoHandler$DefaultEpollIoRegistration.handle(EpollIoHandler.java:317)
+	at knot//io.netty.channel.epoll.EpollIoHandler.processReady(EpollIoHandler.java:515)
+	at knot//io.netty.channel.epoll.EpollIoHandler.run(EpollIoHandler.java:460)
+	at knot//io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225)
+	at knot//io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196)
+	at knot//io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1193)
+	at knot//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Netty Epoll IO #0
+Stacktrace:
+	at knot//net.minecraft.class_2547.method_55622(class_2547.java:33)
+
+-- Connection --
+Details:
+	Protocol: play
+	Flow: CLIENTBOUND
+	Is Local: false
+	Server type: OTHER
+	Server brand: Bedrock v: *
+Stacktrace:
+	at knot//net.minecraft.class_2547.method_55622(class_2547.java:33)
+	at knot//net.minecraft.class_2600.method_59803(class_2600.java:47)
+	at knot//net.minecraft.class_8673.method_60882(class_8673.java:146)
+	at knot//net.minecraft.class_8673.method_60881(class_8673.java:137)
+	at knot//net.minecraft.class_2535.exceptionCaught(class_2535.java:134)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:289)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:271)
+	at knot//io.netty.channel.ChannelHandlerAdapter.exceptionCaught(ChannelHandlerAdapter.java:92)
+	at knot//com.viaversion.viaversion.platform.ViaEncodeHandler.exceptionCaught(ViaEncodeHandler.java:64)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:289)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:271)
+	at knot//io.netty.channel.ChannelInboundHandlerAdapter.exceptionCaught(ChannelInboundHandlerAdapter.java:143)
+	at knot//com.viaversion.viaversion.platform.ViaDecodeHandler.exceptionCaught(ViaDecodeHandler.java:64)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:289)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:359)
+	at knot//io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+	at knot//io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+	at knot//io.netty.handler.codec.ByteToMessageCodec.channelRead(ByteToMessageCodec.java:103)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//io.netty.handler.flow.FlowControlHandler.dequeue(FlowControlHandler.java:201)
+	at knot//io.netty.handler.flow.FlowControlHandler.channelRead(FlowControlHandler.java:163)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+	at knot//io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+	at knot//io.netty.handler.codec.ByteToMessageCodec.channelRead(ByteToMessageCodec.java:103)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+	at knot//io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+	at knot//io.netty.handler.codec.ByteToMessageCodec.channelRead(ByteToMessageCodec.java:103)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+	at knot//io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+	at knot//io.netty.handler.codec.ByteToMessageCodec.channelRead(ByteToMessageCodec.java:103)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+	at knot//io.netty.handler.codec.MessageToMessageCodec.channelRead(MessageToMessageCodec.java:120)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:293)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1429)
+	at knot//io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.ProxyInboundRouter.channelRead(ProxyInboundRouter.java:66)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.common.EncapsulatedToMessageHandler.channelRead0(EncapsulatedToMessageHandler.java:15)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.common.EncapsulatedToMessageHandler.channelRead0(EncapsulatedToMessageHandler.java:8)
+	at knot//io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.AdvancedChannelInboundHandler.channelRead(AdvancedChannelInboundHandler.java:48)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.AdvancedChannelInboundHandler.channelRead(AdvancedChannelInboundHandler.java:48)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.AdvancedChannelInboundHandler.channelRead(AdvancedChannelInboundHandler.java:48)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.common.RakSessionCodec.onOrderedReceived(RakSessionCodec.java:380)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.common.RakSessionCodec.checkForOrdered(RakSessionCodec.java:361)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.common.RakSessionCodec.handleDatagram(RakSessionCodec.java:354)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.common.RakSessionCodec.channelRead(RakSessionCodec.java:227)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:102)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at knot//io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+	at knot//io.netty.handler.codec.MessageToMessageCodec.channelRead(MessageToMessageCodec.java:120)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.AdvancedChannelInboundHandler.channelRead(AdvancedChannelInboundHandler.java:48)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at knot//org.cloudburstmc.netty.handler.codec.raknet.client.RakClientProxyRouteHandler.channelRead(RakClientProxyRouteHandler.java:52)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at knot//io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1429)
+	at knot//io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+	at knot//io.netty.channel.epoll.EpollDatagramChannel.connectedRead(EpollDatagramChannel.java:617)
+	at knot//io.netty.channel.epoll.EpollDatagramChannel.access$400(EpollDatagramChannel.java:57)
+	at knot//io.netty.channel.epoll.EpollDatagramChannel$EpollDatagramChannelUnsafe.epollInReady(EpollDatagramChannel.java:547)
+	at knot//io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.handle(AbstractEpollChannel.java:482)
+	at knot//io.netty.channel.epoll.EpollIoHandler$DefaultEpollIoRegistration.handle(EpollIoHandler.java:317)
+	at knot//io.netty.channel.epoll.EpollIoHandler.processReady(EpollIoHandler.java:515)
+	at knot//io.netty.channel.epoll.EpollIoHandler.run(EpollIoHandler.java:460)
+	at knot//io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225)
+	at knot//io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196)
+	at knot//io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1193)
+	at knot//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.11
+	Minecraft Version ID: 1.21.11
+	Operating System: Linux (amd64) version 7.0.10-1-liquorix-amd64
+	Java Version: 21.0.7, Microsoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Microsoft
+	Memory: 285491064 bytes (272 MiB) / 1006632960 bytes (960 MiB) up to 1912602624 bytes (1824 MiB)
+	CPUs: 4
+	Processor Vendor: GenuineIntel
+	Processor Name: 11th Gen Intel(R) Core(TM) i3-1115G4 @ 3.00GHz
+	Identifier: Intel64 Family 6 Model 140 Stepping 1
+	Microarchitecture: Tiger Lake
+	Frequency (GHz): 3.00
+	Number of physical packages: 1
+	Number of physical CPUs: 2
+	Number of logical CPUs: 4
+	Graphics card #0 name: unknown
+	Graphics card #0 vendor: unknown
+	Graphics card #0 VRAM (MiB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MiB): 8180.27
+	Virtual memory used (MiB): 7876.28
+	Swap memory total (MiB): 6362.96
+	Swap memory used (MiB): 4389.97
+	Space in storage for jna.tmpdir (MiB): available: 47656.64, total: 154328.13
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): available: 47656.64, total: 154328.13
+	Space in storage for io.netty.native.workdir (MiB): available: 47656.64, total: 154328.13
+	Space in storage for java.io.tmpdir (MiB): available: 47656.64, total: 154328.13
+	Space in storage for workdir (MiB): available: 47656.64, total: 154328.13
+	JVM Flags: 7 total; -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=16M -Xmx1817m
+	Debug Flags: 0 total; 
+	Fabric Mods: 
+		catlean: CatLean 0.1.2
+		cloth-config: Cloth Config v20 21.11.153
+			cloth-basic-math: cloth-basic-math 0.6.1
+		crystaloptimizer: CrystalOptimizer 1.0.0
+		entityculling: EntityCulling 1.10.2
+			transition: TRansition 1.0.19
+			trender: TRender 1.0.13
+		fabric-api: Fabric API 0.141.4+1.21.11
+			fabric-api-base: Fabric API Base 1.0.5+4ebb5c083e
+			fabric-api-lookup-api-v1: Fabric API Lookup API (v1) 1.6.114+20dc27073e
+			fabric-biome-api-v1: Fabric Biome API (v1) 17.1.1+4fc5413f3e
+			fabric-block-api-v1: Fabric Block API (v1) 1.1.10+4ebb5c083e
+			fabric-block-view-api-v2: Fabric BlockView API (v2) 1.0.39+4ebb5c083e
+			fabric-command-api-v2: Fabric Command API (v2) 2.4.7+6b42a6003e
+			fabric-content-registries-v0: Fabric Content Registries (v0) 10.2.14+4fc5413f3e
+			fabric-convention-tags-v1: Fabric Convention Tags 2.1.55+7f945d5b3e
+			fabric-convention-tags-v2: Fabric Convention Tags (v2) 2.17.3+8ef948ba3e
+			fabric-crash-report-info-v1: Fabric Crash Report Info (v1) 0.3.23+4ebb5c083e
+			fabric-data-attachment-api-v1: Fabric Data Attachment API (v1) 1.8.48+eed0806f3e
+			fabric-data-generation-api-v1: Fabric Data Generation API (v1) 23.4.1+69974c4e3e
+			fabric-dimensions-v1: Fabric Dimensions API (v1) 4.0.28+4fc5413f3e
+			fabric-entity-events-v1: Fabric Entity Events (v1) 3.1.1+1d0ab4303e
+			fabric-events-interaction-v0: Fabric Events Interaction (v0) 4.1.1+3b89ecf63e
+			fabric-game-rule-api-v1: Fabric Game Rule API (v1) 2.0.3+4fc5413f3e
+			fabric-item-api-v1: Fabric Item API (v1) 11.5.20+d0c46b9e3e
+			fabric-item-group-api-v1: Fabric Item Group API (v1) 4.2.36+4fc5413f3e
+			fabric-key-binding-api-v1: Fabric Key Binding API (v1) 1.1.7+4fc5413f3e
+			fabric-lifecycle-events-v1: Fabric Lifecycle Events (v1) 2.6.15+4ebb5c083e
+			fabric-loot-api-v2: Fabric Loot API (v2) 3.0.73+3f89f5a53e
+			fabric-loot-api-v3: Fabric Loot API (v3) 2.0.20+78c8b4663e
+			fabric-message-api-v1: Fabric Message API (v1) 6.1.12+4ebb5c083e
+			fabric-model-loading-api-v1: Fabric Model Loading API (v1) 6.0.15+4fc5413f3e
+			fabric-networking-api-v1: Fabric Networking API (v1) 5.1.6+6b6d71a53e
+			fabric-object-builder-api-v1: Fabric Object Builder API (v1) 21.1.40+4fc5413f3e
+			fabric-particles-v1: Fabric Particles (v1) 4.2.12+4fc5413f3e
+			fabric-recipe-api-v1: Fabric Recipe API (v1) 8.2.4+4ebb5c083e
+			fabric-registry-sync-v0: Fabric Registry Sync (v0) 6.2.6+1718722b3e
+			fabric-renderer-api-v1: Fabric Renderer API (v1) 8.0.3+f4ffd2e53e
+			fabric-renderer-indigo: Fabric Renderer - Indigo 5.0.3+f4ffd2e53e
+			fabric-rendering-fluids-v1: Fabric Rendering Fluids (v1) 3.1.43+4ebb5c083e
+			fabric-rendering-v1: Fabric Rendering (v1) 16.2.10+0290ad933e
+			fabric-resource-conditions-api-v1: Fabric Resource Conditions API (v1) 5.0.35+4fc5413f3e
+			fabric-resource-loader-v0: Fabric Resource Loader (v0) 3.3.4+4fc5413f3e
+			fabric-resource-loader-v1: Fabric Resource Loader (v1) 1.0.10+78c8b4663e
+			fabric-screen-api-v1: Fabric Screen API (v1) 3.1.7+4ebb5c083e
+			fabric-screen-handler-api-v1: Fabric Screen Handler API (v1) 1.3.162+4fc5413f3e
+			fabric-serialization-api-v1: Fabric Serialization API (v1) 1.0.5+4ebb5c083e
+			fabric-sound-api-v1: Fabric Sound API (v1) 1.0.51+4fc5413f3e
+			fabric-tag-api-v1: Fabric Tag API (v1) 1.2.20+4fc5413f3e
+			fabric-transfer-api-v1: Fabric Transfer API (v1) 6.0.25+4fc5413f3e
+			fabric-transitive-access-wideners-v1: Fabric Transitive Access Wideners (v1) 7.1.0+014c8cec3e
+		fabric-language-kotlin: Fabric Language Kotlin 1.13.11+kotlin.2.3.21
+			org_jetbrains_kotlin_kotlin-reflect: kotlin-reflect 2.3.21
+			org_jetbrains_kotlin_kotlin-stdlib: kotlin-stdlib 2.3.21
+			org_jetbrains_kotlin_kotlin-stdlib-jdk7: kotlin-stdlib-jdk7 2.3.21
+			org_jetbrains_kotlin_kotlin-stdlib-jdk8: kotlin-stdlib-jdk8 2.3.21
+			org_jetbrains_kotlinx_atomicfu-jvm: atomicfu-jvm 0.32.1
+			org_jetbrains_kotlinx_kotlinx-coroutines-core-jvm: kotlinx-coroutines-core-jvm 1.10.2
+			org_jetbrains_kotlinx_kotlinx-coroutines-jdk8: kotlinx-coroutines-jdk8 1.10.2
+			org_jetbrains_kotlinx_kotlinx-datetime-jvm: kotlinx-datetime-jvm 0.7.1
+			org_jetbrains_kotlinx_kotlinx-io-bytestring-jvm: kotlinx-io-bytestring-jvm 0.9.0
+			org_jetbrains_kotlinx_kotlinx-io-core-jvm: kotlinx-io-core-jvm 0.9.0
+			org_jetbrains_kotlinx_kotlinx-serialization-cbor-jvm: kotlinx-serialization-cbor-jvm 1.11.0
+			org_jetbrains_kotlinx_kotlinx-serialization-core-jvm: kotlinx-serialization-core-jvm 1.11.0
+			org_jetbrains_kotlinx_kotlinx-serialization-json-jvm: kotlinx-serialization-json-jvm 1.11.0
+		fabricloader: Fabric Loader 0.19.2
+			mixinextras: MixinExtras 0.5.4
+		ferritecore: FerriteCore 8.2.0
+		immediatelyfast: ImmediatelyFast 1.14.2+1.21.11
+		java: OpenJDK 64-Bit Server VM 21
+		krypton: Krypton 0.2.10
+			com_velocitypowered_velocity-native: velocity-native 3.4.0-SNAPSHOT
+		lithium: Lithium 0.21.4+mc1.21.11
+		minecraft: Minecraft 1.21.11
+		modernfix: ModernFix 5.26.2-build.1
+		sodium: Sodium 0.8.12-beta.2+mc1.21.11
+		viafabricplus: ViaFabricPlus 4.4.13
+			com_github_oryxel1_cubeconverter: CubeConverter 5b4fce77c4
+			com_google_code_gson_gson: gson 2.13.2
+			com_google_errorprone_error_prone_annotations: error_prone_annotations 2.41.0
+			com_seedfinding_mc_biome: mc_biome 1.171.1
+			com_seedfinding_mc_core: mc_core 1.210.0
+			com_seedfinding_mc_math: mc_math 1.171.0
+			com_seedfinding_mc_noise: mc_noise 1.171.1
+			com_seedfinding_mc_seed: mc_seed 1.171.2
+			com_vdurmont_semver4j: semver4j 3.1.0
+			com_viaversion_mcstructs_dialog: dialog 5-3.2.2-20251210.004302-1
+			com_viaversion_mcstructs_registry: registry 5-3.2.2-SNAPSHOT
+			com_viaversion_viaaprilfools-common: viaaprilfools-common 4.2.1
+			com_viaversion_viabackwards-common: viabackwards-common 5.9.1
+			com_viaversion_viaversion-common: viaversion-common 5.9.2-20260509.080613-3
+			de_florianreuth_classic4j: classic4j 2.3.0
+			dev_kastle_netty_netty-transport-nethernet: netty-transport-nethernet 1.7.0
+			dev_kastle_netty_netty-transport-raknet: netty-transport-raknet 1.7.0
+			dev_kastle_webrtc_webrtc-java: webrtc-java 1.0.3
+			dev_kastle_webrtc_webrtc-java_linux-aarch64: webrtc-java 1.0.3
+			dev_kastle_webrtc_webrtc-java_linux-x86_64: webrtc-java 1.0.3
+			dev_kastle_webrtc_webrtc-java_macos-aarch64: webrtc-java 1.0.3
+			dev_kastle_webrtc_webrtc-java_windows-aarch64: webrtc-java 1.0.3
+			dev_kastle_webrtc_webrtc-java_windows-x86_64: webrtc-java 1.0.3
+			io_jsonwebtoken_jjwt-api: jjwt-api 0.13.0
+			io_jsonwebtoken_jjwt-gson: jjwt-gson 0.13.0
+			io_jsonwebtoken_jjwt-impl: jjwt-impl 0.13.0
+			net_jodah_expiringmap: expiringmap 0.5.10
+			net_lenni0451_commons_gson: gson 1.9.2
+			net_lenni0451_commons_httpclient: httpclient 1.9.2
+			net_lenni0451_mcstructs-bedrock_forms: forms 2.0.1
+			net_lenni0451_mcstructs-bedrock_text: text 2.0.1
+			net_lenni0451_reflect: Reflect 1.6.2
+			net_raphimc_minecraftauth: MinecraftAuth 5.0.1-20260217.194827-4
+			net_raphimc_viabedrock: ViaBedrock 0.0.27-20260505.185045-9
+			net_raphimc_vialegacy: ViaLegacy 3.0.16
+			team_unnamed_mocha: mocha 3.0.1
+			viafabricplus-api: ViaFabricPlus API 4.4.13
+			viafabricplus-visuals: ViaFabricPlus Visuals 4.4.13
